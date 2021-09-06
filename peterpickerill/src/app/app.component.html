@@ -1,0 +1,98 @@
+<div id="modal" class="modal modal-sm hidden">
+  <div class="content">
+    <header>
+      <h1>Modal Title</h1>
+      <button id="modalClose" class="close">Close</button>
+    </header>
+    <article>
+      <div class="avatar">
+        <img class="" src="https://via.placeholder.com/150" />
+      </div>
+      <div class="text-center">
+        <h2>lightspeed user</h2>
+        <i>CSS Developer</i>
+      </div>
+      <form>
+        <div class="input-group">
+          <span>Username</span>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-group">
+          <span>Password</span>
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="input-group">
+          <span>Date of Birth</span>
+          <input type="date" placeholder="YYYY-MM-DD" />
+        </div>
+        <div class="input-group">
+          <span>Time of Birth</span>
+          <input type="time" placeholder="YYYY-MM-DD" />
+        </div>
+      </form>
+    </article>
+    <footer>
+      <button class="btn-secondary btn-lg">Large</button>
+    </footer>
+  </div>
+</div>
+<nav>
+  <div class="search-group">
+    <p>This website was built with <a href="">Angular</a> and <a href="">lightspeed</a></p>
+  </div>
+  <ul class="nav-ul">
+    <li>Cards</li>
+    <li class="active">Colors</li>
+    <li>Typography</li>
+    <li>Alerts</li>
+    <li>Buttons</li>
+  </ul>
+  <div class="avatar float-left">
+    <button class="btn-primary">Get in touch</button>
+  </div>
+</nav>
+<aside class="hidden">
+  <ul class="text-large">
+    <li>One</li>
+    <li class="active">Two</li>
+    <li>Three</li>
+    <li>Four</li>
+  </ul>
+</aside>
+<main>
+  <div style="height:20em;background-image: url('assets/background.png');background-repeat: no-repeat;">
+    <div class="avatar">
+      <img class="" src="https://via.placeholder.com/150" />
+    </div>
+    <h1 class="text-black text-center">Peter Pickerill</h1>
+    <h4 class="text-black text-center">Fullstack Developer</h4>
+    <app-social-media-bar></app-social-media-bar>
+  </div>
+  <div class="btn-bar">
+    <app-programming-language-btn [level]=4 [image]="'assets/python-logo.svg'" [name]="'Python'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=3 [image]="'assets/rust-logo-blk.svg'" [name]="'Rust'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=4 [image]="'assets/c-sharp-logo.svg'" [name]="'C#'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=3 [image]="'assets/java-logo.svg'" [name]="'Java'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=5 [image]="'assets/html-5-logo.svg'" [name]="'HTML 5'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=3 [image]="'assets/PHP-logo.svg'" [name]="'PHP'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=5 [image]="'assets/mithril-logo.svg'" [name]="'Mithril JS'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=3 [image]="'assets/typescript-logo.svg'" [name]="'TypeScript'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=2 [image]="'assets/angular-full-color-logo.svg'" [name]="'Angular'">
+    </app-programming-language-btn>
+    <app-programming-language-btn [level]=4 [image]="'assets/mongodb-icon.svg'" [name]="'MongoDB'">
+    </app-programming-language-btn>
+  </div>
+  <article>
+    <h1>Introduction</h1>
+  </article>
+</main>
+
+<router-outlet></router-outlet>

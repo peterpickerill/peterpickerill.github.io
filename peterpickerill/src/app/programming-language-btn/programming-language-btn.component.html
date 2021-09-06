@@ -1,0 +1,7 @@
+<button>
+    <img [src]="image"/>
+    <h4>{{name}}</h4>
+    <div class="skill-progress" title="{{this.getLevelText()}}">
+        <div *ngFor="let x of [1,2,3,4,5];" [ngClass]="level >= x ? 'segment bg-active' : 'segment'"></div>
+    </div>
+</button>

@@ -1,0 +1,45 @@
+button
+    display: grid
+    grid-areas: "logo text"
+    grid-template-rows: 1fr auto
+
+    &:hover
+        grid-areas: "logo text skill-progress"
+        grid-template-rows: 1fr auto auto
+        
+        .skill-progress
+            display: grid
+
+    img
+        grid-area: "logo"
+        height: 150px
+        width: 150px
+
+    h1,h2,h3,h4,h5,h6    
+        grid-area: "text"
+        color: #aaa
+        margin-top:1em
+
+    .skill-progress
+        margin-top:1em
+        display: none
+        grid-template-columns: repeat(5, 1fr)
+        
+        .segment
+            border: 0.005em solid #eee
+            min-height: 1em
+
+            &:first-child
+                border-radius: 5px 0 0 5px
+
+            &:last-child
+                border-radius: 0 5px 5px 0
+
+        .segment.filled
+            background: green
+
+    
+
+
+
+
